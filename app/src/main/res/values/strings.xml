@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">AGRITECH</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="strTomato">Tomato</string>
+    <string name="strEggplant">Eggplant</string>
+    <string name="strBitter_gourd">Bitter gourd</string>
+    <string name="strPechay">Pechay</string>
+    <string name="strSquash">Squash</string>
+    <string name="strChilli_peppers">Chilli peppers</string>
+    <string name="strOnions">Onions</string>
+    <string name="strLadies_finger">Ladies fingers</string>
+    <string name="Seedlingsproduction">Seedlings Production</string>
+    <string name="Fertilizerapplication">Fertilizer Application</string>
+    <string name="Integratedpestmanagement">Integrated pest management</string>
+    <string name="Typesoffertilizers">Types of fertilizers</string>
+    <string name="Complete">15-15-15</string>
+    <string name="Urea">Urea</string>
+    <string name="zerozerosix">0-0-60</string>
+    <string name="Dat">After transplanting apply fertilizer every 14 days</string>
+    <string name="Stickytraps">Integrated Pest Management</string>
+    <string name="Usestickytraps">Use sticky traps for monitoring and mass trapping insect pest</string>
+    <string name="Totalplantpopulation">Total plant population</string>
+    <string name="Calculate">Calculate</string>
+
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="catTextsize">22sp</dimen>
+    <dimen name="catMargin_top">46sp</dimen>
+    <dimen name="catMargin_top_card">18sp</dimen>
+    <dimen name="seedlingsText">16sp</dimen>
+    <dimen name="calEdtTopMt">20dp</dimen>
+
+
+</resources>

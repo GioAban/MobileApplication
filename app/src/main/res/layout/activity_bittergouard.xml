@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGreen"
+    android:paddingBottom="50dp"
+    tools:context=".Tomato">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="40dp"
+        android:src="@drawable/ic_icon_bulb"
+        app:fabSize="normal"
+        android:backgroundTint="@color/purple_500"
+        app:tint="@color/white"
+        tools:ignore="MissingClass" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/plantCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="120dp"
+        android:src="@drawable/ic_baseline_calculate_24"
+        android:visibility="invisible"
+
+        app:fabSize="normal"
+        android:backgroundTint="@color/purple_500"
+        app:tint="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="60dp"
+                    android:src="@drawable/bittergourdimg" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:background="@drawable/box"
+                    android:orientation="vertical"
+                    android:padding="24sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tomato"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Regularly eating bittergourd as a part of your daily diet is known to prvent skin ailments like psoriasis and fungal infections like ringworm and athletes foot. - Drinking bitter gourd juice serves as a healthy way to detox the body."
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+            <!--  Divider  -->
+
+
+            <!--Seedling clickablecard-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:onClick="expandSeedlings"
+                android:elevation="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/Seedlingsproduction"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:id="@+id/flipArrow1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--Gone Layout-->
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/details1gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                >
+
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:rowCount="2"
+                    android:padding="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="plantSpacing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="@color/lightGreen">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/plantspacingicon"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.5m"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/seedlingsText"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="rowSpacing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="@color/lightGreen">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/row"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2m"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/seedlingsText"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="seedDepth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_row="0"
+                        android:layout_column="2"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="@color/lightGreen">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/seedepth"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1 cm"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/seedlingsText"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="sprout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="@color/lightGreen">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/sprout"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8 - 10 Day's"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/seedlingsText"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="hardening"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="@color/lightGreen">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/hardening"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2 - 3 Day's"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/seedlingsText"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="transplanting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="@color/lightGreen">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/transplant"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2 Week's"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/seedlingsText"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </GridLayout>
+            </LinearLayout>
+
+
+            <!--Fertilizer clickablecard-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:elevation="10dp"
+                android:onClick="expandFertilizer"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/Fertilizerapplication"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+
+
+
+                    <ImageView
+                        android:id="@+id/flipArrow2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Gone Layout-->
+
+            <LinearLayout
+                android:id="@+id/details2gone"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Typesoffertilizers"
+                    android:layout_marginStart="28dp"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:paddingStart="28dp"
+                    android:paddingEnd="28dp"
+                    android:rowCount="1"
+                    android:paddingBottom="28dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="complete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="#A2C8B5">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/fertilizericon">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15-15-15"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/seedlingsText"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="urea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="#A2C8B5">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:elevation="50dp"
+                                android:src="@drawable/iconurea">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Urea"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/seedlingsText"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="potash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_row="0"
+                        android:layout_column="2"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp"
+                        app:cardBackgroundColor="#A2C8B5">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/fpotash"
+                                android:elevation="30dp">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0-0-60"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/seedlingsText"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginEnd="28dp"
+                    android:textSize="14sp"
+                    android:text="@string/Dat"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="300dp"
+                            app:cardElevation="50dp"
+                            app:cardBackgroundColor="#794E21"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="6dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/image1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/seedling1" />
+
+                                <TextView
+                                    android:id="@+id/h1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/image1"
+                                    android:layout_marginTop="10dp"
+                                    android:text="14 DAT"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/img1"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_below="@+id/h1"
+                                    android:src="@drawable/fertilizericon" />
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_below="@id/img1"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/iconurea" />
+
+                                <TextView
+                                    android:id="@+id/text1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/h1"
+                                    android:layout_marginTop="18dp"
+                                    android:layout_toRightOf="@+id/img1"
+                                    android:text="2.5 g"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/text1"
+                                    android:layout_marginTop="32dp"
+                                    android:layout_toRightOf="@+id/img1"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="2.5 g" />
+
+
+                            </RelativeLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="300dp"
+                            app:cardElevation="50dp"
+                            app:cardBackgroundColor="#794E21"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="6dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/image2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/seedling2" />
+
+                                <TextView
+                                    android:id="@+id/h2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/image2"
+                                    android:layout_marginTop="10dp"
+                                    android:text="28 DAT"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/img2"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_below="@+id/h2"
+                                    android:src="@drawable/fertilizericon" />
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_below="@id/img2"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/iconurea" />
+
+                                <TextView
+                                    android:id="@+id/text2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/h2"
+                                    android:layout_marginTop="18dp"
+                                    android:layout_toRightOf="@+id/img2"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="2.5 g" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/text2"
+                                    android:layout_marginTop="32dp"
+                                    android:layout_toRightOf="@+id/img2"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="2.5 g" />
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="300dp"
+                            app:cardElevation="50dp"
+                            app:cardBackgroundColor="#794E21"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="6dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/image3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/seedling3" />
+
+                                <TextView
+                                    android:id="@+id/h3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/image3"
+                                    android:layout_marginTop="10dp"
+                                    android:text="42 DAT"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/img3"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_below="@+id/h3"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/fertilizericon" />
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_below="@id/img3"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/fpotash" />
+
+                                <TextView
+                                    android:id="@+id/text3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/h3"
+                                    android:layout_marginTop="18dp"
+                                    android:layout_toRightOf="@+id/img3"
+                                    android:text="2.5 g"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/text3"
+                                    android:layout_marginTop="32dp"
+                                    android:layout_toRightOf="@+id/img3"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="2.5 g" />
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="300dp"
+                            app:cardElevation="50dp"
+                            app:cardBackgroundColor="#794E21"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="6dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/image4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/seedling4" />
+
+                                <TextView
+                                    android:id="@+id/h4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/image4"
+                                    android:layout_marginTop="10dp"
+                                    android:text="56 DAT"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/img4"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_below="@+id/h4"
+                                    android:src="@drawable/fertilizericon" />
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_below="@id/img4"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/fpotash" />
+
+                                <TextView
+                                    android:id="@+id/text4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/h4"
+                                    android:layout_marginTop="18dp"
+                                    android:layout_toRightOf="@+id/img4"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="2.5 g" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/text4"
+                                    android:layout_marginTop="32dp"
+                                    android:layout_toRightOf="@+id/img4"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="2.5 g" />
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="300dp"
+                            app:cardElevation="50dp"
+                            app:cardBackgroundColor="#794E21"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="6dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/image5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/seedling5" />
+
+                                <TextView
+                                    android:id="@+id/h5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/image5"
+                                    android:layout_marginTop="10dp"
+                                    android:text="70 DAT"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/img5"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_below="@+id/h5"
+                                    android:src="@drawable/fertilizericon" />
+
+
+
+                                <TextView
+                                    android:id="@+id/text5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/h5"
+                                    android:layout_marginTop="18dp"
+                                    android:layout_toRightOf="@+id/img5"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="2.5 g" />
+
+
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="300dp"
+                            app:cardElevation="50dp"
+                            app:cardBackgroundColor="#794E21"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="6dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/image6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/seedling6" />
+
+                                <TextView
+                                    android:id="@+id/h6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/image6"
+                                    android:layout_marginTop="10dp"
+                                    android:text="84 DAT"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/img6"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_below="@+id/h6"
+                                    android:src="@drawable/fertilizericon" />
+
+
+
+                                <TextView
+                                    android:id="@+id/text6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/h6"
+                                    android:layout_marginTop="18dp"
+                                    android:layout_toRightOf="@+id/img6"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="2.5 g" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="300dp"
+                            app:cardElevation="50dp"
+                            app:cardBackgroundColor="#794E21"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="6dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/image7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/seedling7" />
+
+                                <TextView
+                                    android:id="@+id/h7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/image7"
+                                    android:layout_marginTop="10dp"
+                                    android:text="94 DAT"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/img7"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_below="@+id/h7"
+                                    android:src="@drawable/fertilizericon" />
+
+                                <TextView
+                                    android:id="@+id/text7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/h7"
+                                    android:layout_marginTop="18dp"
+                                    android:layout_toRightOf="@+id/img7"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="2.5 g" />
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="300dp"
+                            app:cardElevation="50dp"
+                            app:cardBackgroundColor="#794E21"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="6dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/image8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/seedling7" />
+
+                                <TextView
+                                    android:id="@+id/h8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/image8"
+                                    android:layout_marginTop="10dp"
+                                    android:text="112 DAT"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/img8"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_below="@+id/h8"
+                                    android:src="@drawable/fertilizericon" />
+
+                                <TextView
+                                    android:id="@+id/text8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/h8"
+                                    android:layout_marginTop="18dp"
+                                    android:layout_toRightOf="@+id/img8"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:text="2.5 g" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <!--  Divider  -->
+
+
+            <!--Clickable Integrated Pest Management-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:onClick="expandPest"
+                android:elevation="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/Stickytraps"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:id="@+id/flipArrow3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/details3gone"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Stickytraps"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginEnd="28dp"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/stickytraps"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginEnd="28dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Usestickytraps"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginBottom="90dp"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

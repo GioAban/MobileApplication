@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="lightBlack">#393939</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tomatoColor">#F3B7A6</color>
+    <color name="violet">#DCA9F9</color>
+    <color name="lightGreen">#A8FCA4</color>
+    <color name="squashColor">#F2AD4F</color>
+    <color name="chilliColor">#EBA7B9</color>
+    <color name="onionColor">#DC849C</color>
+
+    <color name="Melon">#EAE383</color>
+    <color name="Cucumber">#8AC161</color>
+    <color name="Papaya">#B5FFB1</color>
+    <color name="Watermelon">#B5FFB1</color>
+    <color name="Pineapple">#B6AA00</color>
+    <color name="Rambutan">#EBA7B9</color>
+
+    <color name="sweetcorn">#EAE383</color>
+    <color name="coconut">#CC9468</color>
+    <color name="sugarcane">#B5FFB1</color>
+    <color name="banana">#EAE383</color>
+
+
+
+
+
+
+
+
+
+    <color name="lightGrey">#BBBBBB</color>
+
+</resources>

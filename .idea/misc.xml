@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Second Semester/Android-master/app/src/main/res/layout/activity_main.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/drawable-anydpi/calculationplantbox.xml" value="0.174" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.155" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.123" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/drawable/bg.xml" value="0.1505" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/drawable/box.xml" value="0.182" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/drawable/fab_text_bg.xml" value="0.182" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/drawable/gradientbackground.xml" value="0.174" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.106" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/drawable/ic_bgfarmer.xml" value="0.174" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/drawable/ic_fertilizer_icon_15_15_15_1_1.xml" value="0.2035" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/drawable/ic_icon_bulb.xml" value="0.155" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/drawable/plant_cal_box.xml" value="0.174" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/drawable/seedlings_box.xml" value="0.2115" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_banana.xml" value="0.22" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_bittergouard.xml" value="0.25" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_chillipepper.xml" value="0.2" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_coconut.xml" value="0.16" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_cucumber.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_eggplant.xml" value="0.18" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_ladiesfinger.xml" value="0.22" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_melon.xml" value="0.22" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_nepheliumlappaceum.xml" value="0.16" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_onion.xml" value="0.2" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_papaya.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_pechay.xml" value="0.2" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_pineapple.xml" value="0.25" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_plant_population.xml" value="0.25" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_squash.xml" value="0.2" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_sugarcane.xml" value="0.18" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_sweetcorn.xml" value="0.25" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_sweetcorn2.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_sweetcorncrop.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_tomato.xml" value="0.2504792332268371" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/activity_watermelon.xml" value="0.2" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/fragment_crop.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/fragment_fruit.xml" value="0.22" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/layout/fragment_vegetable.xml" value="0.25" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.155" />
+        <entry key="..\:/Users/Gio/AndroidStudioProjects/AGRITECH/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.155" />
+        <entry key="..\:/Users/Gio/Downloads/Android-master (2)/Android-master/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Gio/Downloads/Android-master (2)/Android-master/app/src/main/res/layout/activity_plant_population.xml" value="0.2" />
+        <entry key="..\:/Users/Gio/Downloads/Android-master (2)/Android-master/app/src/main/res/layout/activity_tomato.xml" value="0.2" />
+        <entry key="..\:/Users/Gio/Downloads/Android-master (2)/Android-master/app/src/main/res/layout/fragment_crop.xml" value="0.2" />
+        <entry key="..\:/Users/Gio/Downloads/Android-master (2)/Android-master/app/src/main/res/layout/fragment_fruit.xml" value="0.2" />
+        <entry key="..\:/Users/Gio/Downloads/Android-master (2)/Android-master/app/src/main/res/layout/fragment_vegetable.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

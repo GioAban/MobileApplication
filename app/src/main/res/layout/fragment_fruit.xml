@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.VegetableFragment"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#ffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <GridLayout
+                android:columnCount="1"
+                android:rowCount="8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/melonCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginTop="@dimen/catMargin_top_card">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/Melon">
+
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="46dp"
+                            android:text="Melon"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/catTextsize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/t1"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="3dp"
+                            android:text="January - February"
+                            android:textColor="@color/lightBlack" />
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="-26dp"
+                            android:src="@drawable/meloncard" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cucumberCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginTop="@dimen/catMargin_top_card">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/Cucumber">
+
+                        <TextView
+                            android:id="@+id/t2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="@dimen/catMargin_top"
+                            android:text="Cucumber"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/catTextsize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/t2"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="3dp"
+                            android:text="Oct - Feb | May - Sept"
+                            android:textColor="@color/lightBlack" />
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginRight="-26dp"
+                            android:src="@drawable/cucumbercard" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/papayaCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginTop="@dimen/catMargin_top_card">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/Papaya">
+
+                        <TextView
+                            android:id="@+id/t3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="@dimen/catMargin_top"
+                            android:text="Papaya"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/catTextsize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/t3"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="3dp"
+                            android:text="October - February"
+                            android:textColor="@color/lightBlack" />
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="112dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="-26dp"
+                            android:src="@drawable/papayacard" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/watermelonCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginTop="@dimen/catMargin_top_card">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/tomatoColor">
+
+                        <TextView
+                            android:id="@+id/t4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="@dimen/catMargin_top"
+                            android:text="Watermelon"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/catTextsize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/t4"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="3dp"
+                            android:text="January - October"
+                            android:textColor="@color/lightBlack" />
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="-18dp"
+                            android:src="@drawable/watermeloncard" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/pineappleCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginTop="@dimen/catMargin_top_card">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/Pineapple">
+
+                        <TextView
+                            android:id="@+id/t5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="@dimen/catMargin_top"
+                            android:text="Pineapple"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/catTextsize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/t5"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="3dp"
+                            android:text="August - October"
+                            android:textColor="@color/lightBlack" />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="230dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-8dp"
+                            android:layout_marginBottom="1dp"
+                            android:src="@drawable/pineapplecard" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/rambutanCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginTop="@dimen/catMargin_top_card">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/Rambutan">
+
+                        <TextView
+                            android:id="@+id/t6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="@dimen/catMargin_top"
+                            android:text="Rambutan"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/catTextsize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/t6"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="3dp"
+                            android:text="Jan-Feb | Nov-Dec"
+                            android:textColor="@color/lightBlack" />
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="140dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="-24dp"
+                            android:src="@drawable/rambutancard" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>
